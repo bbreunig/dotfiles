@@ -166,7 +166,7 @@ automatically-unhide-macos-hidden-apps = false
     run = 'move-node-to-workspace Messages'
 
 [[on-window-detected]]
-    if.app-id = 'com.microsoft.Teams'
+    if.app-id = 'com.microsoft.teams2'
     run = 'move-node-to-workspace Messages'
 
 [[on-window-detected]]
@@ -175,6 +175,10 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'com.tdesktop.Telegram'
+    run = 'move-node-to-workspace Messages'
+
+[[on-window-detected]]
+    if.app-id = 'ru.keepcoder.Telegram'
     run = 'move-node-to-workspace Messages'
 
 [[on-window-detected]]
@@ -187,7 +191,7 @@ automatically-unhide-macos-hidden-apps = false
 
 #Calendar
 [[on-window-detected]]
-    if.app-id = 'com.apple.Calendar'
+    if.app-id = 'com.apple.iCal'
     run = 'move-node-to-workspace Calendar'
 
 # Notes
