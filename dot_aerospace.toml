@@ -52,16 +52,16 @@ automatically-unhide-macos-hidden-apps = false
 
 [mode.main.binding]
     # Focus
-    ctrl-h = 'focus left'
-    ctrl-j = 'focus down'
-    ctrl-k = 'focus up'
-    ctrl-l = 'focus right'
+    ctrl-left = 'focus left'
+    ctrl-down = 'focus down'
+    ctrl-up = 'focus up'
+    ctrl-right = 'focus right'
 
     # Move
-    ctrl-alt-h = 'move left'
-    ctrl-alt-j = 'move down'
-    ctrl-alt-k = 'move up'
-    ctrl-alt-l = 'move right'
+    ctrl-alt-left = 'move left'
+    ctrl-alt-down = 'move down'
+    ctrl-alt-up = 'move up'
+    ctrl-alt-right = 'move right'
 
     # Resize
     ctrl-minus = 'resize smart -50'
@@ -71,7 +71,7 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-1 = 'workspace Desktop'
     ctrl-2 = 'workspace Work'
     ctrl-3 = 'workspace Music'
-    ctrl-4 = 'workspace 4'
+    ctrl-4 = 'workspace Notes'
     ctrl-5 = 'workspace 5'
     ctrl-6 = 'workspace 6'
     ctrl-7 = 'workspace 7'
@@ -86,7 +86,7 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-1 = 'move-node-to-workspace Desktop'
     ctrl-alt-2 = 'move-node-to-workspace Work'
     ctrl-alt-3 = 'move-node-to-workspace Music'
-    ctrl-alt-4 = 'move-node-to-workspace 4'
+    ctrl-alt-4 = 'move-node-to-workspace Notes'
     ctrl-alt-5 = 'move-node-to-workspace 5'
     ctrl-alt-6 = 'move-node-to-workspace 6'
     ctrl-alt-7 = 'move-node-to-workspace 7'
@@ -121,3 +121,114 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+## Move Windows
+
+# Browser
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = 'move-node-to-workspace Browser'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari'
+run = 'move-node-to-workspace Browser'
+
+# Music
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = 'move-node-to-workspace Music'
+
+# Mail
+[[on-window-detected]]
+if.app-id = 'org.mozilla.thunderbird'
+run = 'move-node-to-workspace Mail'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = 'move-node-to-workspace Mail'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = 'move-node-to-workspace Mail'
+
+# VSCode
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace VSCode'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.dt.Xcode'
+run = 'move-node-to-workspace VSCode'
+
+# Messages
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
+run = 'move-node-to-workspace Messages'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Teams'
+run = 'move-node-to-workspace Messages'
+
+[[on-window-detected]]
+if.app-id = 'org.whispersystems.signal-desktop'
+run = 'move-node-to-workspace Messages'
+
+[[on-window-detected]]
+if.app-id = 'com.tdesktop.Telegram'
+run = 'move-node-to-workspace Messages'
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace Messages'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.MobileSMS'
+run = 'move-node-to-workspace Messages'
+
+
+# Notes
+[[on-window-detected]]
+if.app-id = 'com.apple.Notes'
+run = 'move-node-to-workspace Notes'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace Notes'
+
+# Work
+[[on-window-detected]]
+if.app-id = 'com.figma.Desktop'
+run = 'move-node-to-workspace Work'
+
+# layout floating
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.ActivityMonitor'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.1password.1password'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.QuickTimePlayerX'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.audio.AudioMIDISetup'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.calculator'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.systempreferences'
+run = 'layout floating'
