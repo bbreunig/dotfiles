@@ -1,0 +1,15 @@
+# ~/.zshrc
+
+# Set PATH (keep this on its own line)
+export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+
+# NVM Configuration
+export NVM_DIR="$HOME/.nvm"  # Correct NVM directory
+
+# Load NVM and its completion
+[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
+[ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/benny/.lmstudio/bin"
+# End of LM Studio CLI section
+
