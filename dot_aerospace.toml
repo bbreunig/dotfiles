@@ -240,3 +240,7 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = 'com.apple.systempreferences'
     run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.fujitsu.pfu.ScanSnapHome'
+    run = 'layout floating'
