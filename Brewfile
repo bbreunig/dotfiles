@@ -51,6 +51,8 @@ cask "signal"
 cask "telegram"
 # Open-source code editor
 cask "visual-studio-code"
+# Python version manager
+cask "miniconda"
 mas "eduVPN", id: 1317704208
 mas "Keynote", id: 409183694
 mas "Logic Pro", id: 634148309
