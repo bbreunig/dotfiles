@@ -183,7 +183,7 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'com.hnc.Discord'
-    run = 'move-node-to-workspace Messages'
+    run = 'move-node-to-workspace Desktop'
 
 [[on-window-detected]]
     if.app-id = 'com.apple.MobileSMS'
