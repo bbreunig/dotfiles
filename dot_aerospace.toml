@@ -224,7 +224,7 @@ automatically-unhide-macos-hidden-apps = false
 # 1Password
 [[on-window-detected]]
     if.app-id = 'com.1password.1password'
-    run = ['move-node-to-workspace Desktop', 'layout floating']
+    run = ['layout floating', 'move-node-to-workspace Desktop']
     
 [[on-window-detected]]
     if.app-id = 'com.apple.QuickTimePlayerX'
@@ -248,5 +248,5 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'com.macpaw.CleanMyMac5'
-    run = ['move-node-to-workspace Desktop', 'layout floating']
+    run = ['layout floating', 'move-node-to-workspace Desktop']
 
