@@ -221,10 +221,15 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'com.apple.Preview'
     run = 'layout floating'
 
+# 1Password
+[[on-window-detected]]
+    if.app-id = 'com.1password.1password'
+    run = 'move-node-to-workspace Desktop'
+
 [[on-window-detected]]
     if.app-id = 'com.1password.1password'
     run = 'layout floating'
-
+    
 [[on-window-detected]]
     if.app-id = 'com.apple.QuickTimePlayerX'
     run = 'layout floating'
