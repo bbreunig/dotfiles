@@ -62,7 +62,6 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
-    window_toggle = ['exec-and-forget aerospace layout floating tiling', 'mode main']
     
 [mode.main.binding]
     # Focus
@@ -122,7 +121,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # Mode
     ctrl-shift-semicolon = 'mode service'
-    cmd-alt-ctrl-space = 'window_toggle'
+    cmd-alt-ctrl-space = 'f'
 
 
 ## Move Windows
