@@ -108,7 +108,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # Mode
     ctrl-shift-semicolon = 'mode service'
-    "cmd-alt-ctrl space" = "window_toggle"
+    cmd-alt-ctrl-space = 'window_toggle'
 
 
 [mode.service.binding]
