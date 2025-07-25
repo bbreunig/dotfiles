@@ -50,6 +50,20 @@ automatically-unhide-macos-hidden-apps = false
     outer.top = 0
     outer.right = 0
 
+[mode.service.binding]
+    esc = ['reload-config', 'mode main']
+    r = ['flatten-workspace-tree', 'mode main']
+    f = ['layout floating tiling', 'mode main']
+    backspace = ['close-all-windows-but-current', 'mode main']
+    ctrl-alt-h = ['join-with left', 'mode main']
+    ctrl-alt-j = ['join-with down', 'mode main']
+    ctrl-alt-k = ['join-with up', 'mode main']
+    ctrl-alt-l = ['join-with right', 'mode main']
+    down = 'volume down'
+    up = 'volume up'
+    shift-down = ['volume set 0', 'mode main']
+    window_toggle = ['exec-and-forget aerospace layout floating tiling', 'mode main']
+    
 [mode.main.binding]
     # Focus
     cmd-alt-ctrl-left = 'focus left'
@@ -109,22 +123,6 @@ automatically-unhide-macos-hidden-apps = false
     # Mode
     ctrl-shift-semicolon = 'mode service'
     cmd-alt-ctrl-space = 'window_toggle'
-
-
-[mode.service.binding]
-    esc = ['reload-config', 'mode main']
-    r = ['flatten-workspace-tree', 'mode main']
-    f = ['layout floating tiling', 'mode main']
-    backspace = ['close-all-windows-but-current', 'mode main']
-    ctrl-alt-h = ['join-with left', 'mode main']
-    ctrl-alt-j = ['join-with down', 'mode main']
-    ctrl-alt-k = ['join-with up', 'mode main']
-    ctrl-alt-l = ['join-with right', 'mode main']
-    down = 'volume down'
-    up = 'volume up'
-    shift-down = ['volume set 0', 'mode main']
-    window_toggle = ['exec-and-forget aerospace layout floating tiling', 'mode main']
-
 
 
 ## Move Windows
