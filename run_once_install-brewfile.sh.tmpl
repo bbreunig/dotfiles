@@ -29,11 +29,37 @@ brew "mas"
 brew "node"
 brew "neovim"
 
-# ... alle anderen Pakete ...
+cask "1password"
+cask "adobe-creative-cloud"
+cask "aerospace"
+cask "brave-browser"
+cask "cleanmymac"
+cask "dbeaver-community"
+cask "discord"
+cask "figma"
+cask "libreoffice"
+cask "microsoft-auto-update"
+cask "microsoft-outlook"
+cask "microsoft-teams"
+cask "nextcloud"
+cask "obs"
+cask "obsidian"
+cask "signal"
+cask "telegram"
+cask "visual-studio-code"
+cask "thunderbird"
+cask "miniconda"
+
+mas "eduVPN", id: 1317704208
+mas "Keynote", id: 409183694
+mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
+mas "Lockdown", id: 1483255076
 
 {{- if $isDesktop }}
 # Desktop-spezifische Software
 cask "streamdeck"
+mas "Logic Pro", id: 634148309
 {{- end }}
 
 {{- if $isLaptop }}
@@ -46,7 +72,32 @@ cask "rstudio"
 
 # VSCode Extensions
 vscode "bradlc.vscode-tailwindcss"
-# ... weitere Extensions ...
+vscode "cschlosser.doxdocgen"
+vscode "cweijan.dbclient-jdbc"
+vscode "cweijan.vscode-postgresql-client2"
+vscode "dbaeumer.vscode-eslint"
+vscode "docker.docker"
+vscode "esbenp.prettier-vscode"
+vscode "gruntfuggly.todo-tree"
+vscode "inferrinizzard.prettier-sql-vscode"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "prisma.prisma"
+vscode "redhat.vscode-yaml"
+vscode "ritwickdey.liveserver"
+vscode "tamasfe.even-better-toml"
+vscode "tomoki1207.pdf"
+vscode "yoavbls.pretty-ts-errors"
+vscode "yzhang.markdown-all-in-one"
 
 EOF
 
