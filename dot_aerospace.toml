@@ -120,8 +120,7 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
     # Mode
-    ctrl-shift-semicolon = 'mode service'
-    cmd-alt-ctrl-space = 'f'
+    cmd-alt-ctrl-space = 'mode service'
 
 
 ## Move Windows
