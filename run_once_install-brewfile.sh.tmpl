@@ -21,13 +21,13 @@ echo "💻 Installing laptop-specific apps..."
 
 brew bundle --file=/dev/stdin <<EOF
 # Gemeinsame Software
-tap "homebrew/services"
 tap "nikitabobko/tap"
 
 brew "chezmoi"
 brew "mas"
 brew "node"
 brew "neovim"
+brew "docker"
 
 cask "1password"
 cask "adobe-creative-cloud"
