@@ -1,0 +1,27 @@
+Host gwsec
+        HostName gruppe10.secp.lab.nm.ifi.lmu.de
+        Port 9001
+        User root
+
+Host pcsec1
+        HostName gruppe10.secp.lab.nm.ifi.lmu.de
+        Port 9002
+        User root
+
+Host pcsec2
+        HostName gruppe10.secp.lab.nm.ifi.lmu.de
+        Port 9003
+        User root
+
+Host dns
+        HostName gruppe10.secp.lab.nm.ifi.lmu.de
+        Port 9004
+        User root
+
+Host dg-test
+	HostName dokploy.genofabrik.de
+	User benka
+
+Host *
+        IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
